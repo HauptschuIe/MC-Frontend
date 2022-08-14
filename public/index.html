@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="headerArea">
+        <div class="containerHeader">
+          <div class="icon-area"><img class="logo" src="LogoFinNoBack.png"></div>
+          <div class="close-area">
+            <div id="close-btn" class="close-container">
+              <div class="leftright"></div>
+              <div class="rightleft"></div>
+              <label class="close">close</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filterArea">
+        <div class="filterAreaContent">
+          <div class="header">Zeitauswahl</div>
+          <div class="timeshifter">
+            
+            <input type="text" class="js-range-slider" name="my_range" value="" />
+            </div>
+            <div class="boardsFlexCompetitor">
+              <div class="wrapper">
+                <div class="displayTime">
+                  <div id="dayfrom" class="day">
+
+                  </div>
+                  <div id="monthfrom" class="month">
+                    
+                  </div>
+                  <div id="yearfrom" class="year">
+                    
+                  </div>
+                </div>
+             
+              </div>
+              <div class="wrapper">
+                <div class="displayTime">
+                  <div id="dayto" class="day">
+
+                  </div>
+                  <div id="monthto" class="month">
+                    
+                  </div>
+                  <div id="yearto" class="year">
+                    
+                  </div>
+                </div>
+             
+              </div>
+            
+          </div>
+            
+          <div class="header">Wettbewerber</div>
+          <div class="boardsFlexCompetitor">
+          <!--
+          <button style="width: 100%;">
+            <img id="iconamazon" src="%PUBLIC_URL%/images/amazon_gradient_800_445.png">
+            <span>
+              Amazon
+            </span>
+          </button>
+          <button style="width: 100%;">
+            <img id="iconamazon" src="%PUBLIC_URL%/images/otto_gradient_800_445.png">
+            <span>
+              OTTO
+            </span>
+          </button>
+          <button style="width: 100%;">
+            <img id="iconmediamarkt" src="%PUBLIC_URL%/images/media_markt_gradient_800_445.png">
+            <span>
+              Media Markt
+            </span>
+          </button>
+          <button style="width: 100%;">
+            <img id="iconsaturn" src="%PUBLIC_URL%/images/saturn_gradient_800_445.png">
+            <span>
+              Saturn
+            </span>
+          </button>
+          <button style="width: 100%;">
+            <img id="iconeuronics" src="%PUBLIC_URL%/images/euronics_gradient_800_445.png">
+            <span>
+              Euronics
+            </span>
+          </button>
+          <button style="width: 100%;">
+            <img id="iconexpert" src="%PUBLIC_URL%/images/expert_gradient_800_445.png">
+            <span>
+              Expert
+            </span>
+          </button>
+        -->
+          <!--
+          <div class="wrapper">
+            <a class="button"> <img id="iconexpert" src="%PUBLIC_URL%/images/amazon_gradient_800_445.png">
+            </a>
+          </div>
+          <div class="wrapper">
+            <a class="button"> <img id="iconexpert" src="%PUBLIC_URL%/images/otto_gradient_800_445.png">
+              </a>
+          </div>
+          <div class="wrapper">
+            <a class="button"> <img id="iconexpert" src="%PUBLIC_URL%/images/media_markt_gradient_800_445.png">
+              </a>
+          </div>
+          <div class="wrapper">
+            <a class="button"> <img id="iconexpert" src="%PUBLIC_URL%/images/saturn_gradient_800_445.png">
+              </a>
+          </div>
+          <div class="wrapper">
+            <a class="button"> <img id="iconexpert" src="%PUBLIC_URL%/images/expert_gradient_800_445.png">
+              </a>
+          </div>
+          
+          <div class="wrapper">
+            <a class="button"> <img id="iconexpert" src="%PUBLIC_URL%/images/euronics_gradient_800_445.png">
+              </a>
+          </div>
+          
+            -->
+          <figure>
+            <div>
+              <span><img id="iconexpert" src="%PUBLIC_URL%/images/amazon_gradient_800_445.png"></span>
+              <span>Amazon</span>
+            </div>
+          </figure>
+          <figure>
+            <div>
+              <span><img id="iconexpert" src="%PUBLIC_URL%/images/otto_gradient_800_445.png"></span>
+              <span>OTTO</span>
+            </div>
+          </figure>
+          <figure>
+            <div>
+              <span><img id="iconexpert" src="%PUBLIC_URL%/images/media_markt_gradient_800_445.png"></span>
+              <span>Media Markt</span>
+            </div>
+          </figure>
+          <figure>
+            <div>
+              <span><img id="iconexpert" src="%PUBLIC_URL%/images/saturn_gradient_800_445.png"></span>
+              <span>Saturn</span>
+            </div>
+          </figure>
+         
+          <figure>
+            <div>
+              <span><img id="iconexpert" src="%PUBLIC_URL%/images/expert_gradient_800_445.png"></span>
+              <span>Expert</span>
+            </div>
+          </figure>
+         
+          <figure>
+            <div>
+              <span><img id="iconexpert" src="%PUBLIC_URL%/images/euronics_gradient_800_445.png"></span>
+              <span>Euronics</span>
+            </div>
+          </figure>
+         
+         
+        </div>
+        <div class="header">Produkte</div>
+        <div class="boardsFlexProducts">
+          <div class="wrapper">
+            <a class="button"> Produkt 1
+            </a>
+          </div>
+          <div class="wrapper">
+            <a class="button"> Produkt 2
+              </a>
+          </div>
+          <div class="wrapper">
+            <a class="button"> Produkt 3
+              </a>
+          </div>
+          <div class="wrapper">
+            <a class="button"> Produkt 4
+              </a>
+          </div>
+          <div class="wrapper">
+            <a class="button"> Produkt 5
+              </a>
+          </div>
+          <div class="wrapper">
+            <a class="button"> Produkt 6
+              </a>
+          </div>
+          <div class="wrapper">
+            <a class="button"> Produkt 7
+              </a>
+          </div>
+          <div class="wrapper">
+            <a class="button"> Produkt 8
+              </a>
+          </div>
+          
+          <div class="wrapper">
+            <a class="button"> Produkt 9
+              </a>
+          </div>
+           <!--
+          <figure>
+            <div>
+              <span><img id="iconexpert" src="%PUBLIC_URL%/images/euronics_gradient_800_445.png"></span>
+              <span>Euronics</span>
+            </div>
+          </figure>-->
+         
+         
+        </div>
+        </div>
+      </div>
+      <div class="dragdropArea">
+        <div class="dragdropContainer">
+          <div id="dragdrop" class="dragdrop">
+            <div id="boardsFlex" class="boardsFlex"></div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="boardsArea">
+        <div class="boards">
+        <div class="header">Verfügbare Boards</div>
+        <div id="insertBoards" class="boardsContent">
+        </div>
+      </div>
+      </div>
+      <div class="monitorsArea">
+        <div class="monitorsAreaContent">
+        <div class="containerMonitore">
+          <div class="mainscreen"><img id="mainscreen" src="%PUBLIC_URL%/images/Display.png"></div>
+          <div class="topmidright"><img class="secondaryscreen" src="%PUBLIC_URL%/images/Display1.png"></div>
+          <div class="topright"><img class="secondaryscreen" src="%PUBLIC_URL%/images/Display1.png"></div>
+          <div class="topmidleft"><img class="secondaryscreen" src="%PUBLIC_URL%/images/Display1.png"></div>
+          <div class="topleft"><img class="secondaryscreen" src="%PUBLIC_URL%/images/Display1.png"></div>
+          <div class="bottomleft"><img class="secondaryscreen" src="%PUBLIC_URL%/images/Display1.png"></div>
+          <div class="bottommidleft"><img class="secondaryscreen" src="%PUBLIC_URL%/images/Display1.png"></div>
+          <div class="bottommidright"><img class="secondaryscreen" src="%PUBLIC_URL%/images/Display1.png"></div>
+          <div class="bottomright"><img class="secondaryscreen" src="%PUBLIC_URL%/images/Display1.png"></div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div id="root"></div>
+   
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    
+    <!--Plugin CSS file with desired skin-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--Plugin JavaScript file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script type = "text/JavaScript" src = " https://MomentJS.com/downloads/moment.js"></script>
+    <script src="%PUBLIC_URL%/js/helper.js"></script>
+
+  </body>
+</html>
